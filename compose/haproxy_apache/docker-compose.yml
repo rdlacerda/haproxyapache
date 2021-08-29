@@ -1,0 +1,28 @@
+version: "3"
+services:
+  apache:
+    build:
+      dockerfile: httpd.Dockerfile
+      context: ../../dockerfile/httpd/
+    image: ricardoa/httpd:latest
+    networks:
+      - backend
+    volumes:
+      - ../../volumes/httpd:/usr/local/apache2/htdocs/:rw
+
+  haproxy:
+    build:
+      dockerfile: haproxy.Dockerfile
+      context: ../../dockerfile/haproxy/
+    image: ricardoa/haproxy:latest
+    networks:
+      - backend
+    depends_on: 
+      - apache
+    ports:
+      - 8080:8080
+      - 1936:1936
+
+networks:
+  backend:
+      driver: bridge

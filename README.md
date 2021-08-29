@@ -19,17 +19,17 @@ Obs: ab pacote apache2-utils
 docker-compose -p haproxyapache -f docker-compose.yml down
 
 # Exemplo saida
-docker-compose -p haproxyapache -f docker-compose.yml up -d --scale apache=10
-Creating haproxyapache_apache_1  ... done
-Creating haproxyapache_apache_2  ... done
-Creating haproxyapache_apache_3  ... done
-Creating haproxyapache_apache_4  ... done
-Creating haproxyapache_apache_5  ... done
-Creating haproxyapache_apache_6  ... done
-Creating haproxyapache_apache_7  ... done
-Creating haproxyapache_apache_8  ... done
-Creating haproxyapache_apache_9  ... done
-Creating haproxyapache_apache_10 ... done
-Creating haproxyapache_apache_10 ... 
-Creating haproxyapache_haproxy_1 ... done
+docker-compose -p haproxyapache -f docker-compose.yml up -d --scale apache=10 </br>
+Creating haproxyapache_apache_1  ... done </br> 
+Creating haproxyapache_apache_2  ... done </br> 
+Creating haproxyapache_apache_3  ... done </br>
+Creating haproxyapache_apache_4  ... done </br>
+Creating haproxyapache_apache_5  ... done </br>
+Creating haproxyapache_apache_6  ... done </br>
+Creating haproxyapache_apache_7  ... done </br>
+Creating haproxyapache_apache_8  ... done </br>
+Creating haproxyapache_apache_9  ... done </br>
+Creating haproxyapache_apache_10 ... done </br>
+Creating haproxyapache_apache_10 ...  </br>
+Creating haproxyapache_haproxy_1 ... done </br>
 
